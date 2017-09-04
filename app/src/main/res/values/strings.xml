@@ -3,10 +3,20 @@
     <!-- Main Activity -->
     <string name="app_name">TransLinkMe</string>
 
-    <string name="title_location">Location</string>
-    <string name="title_search">Search</string>
-    <string name="title_favourites">Favourites</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Favourites Fragment -->
+    <string name="title_favourites">Favourites</string>
+    <string name="fragment_favourites_title">Favourite Buses</string>
+
+    <!-- Location Fragment -->
+    <string name="title_location">Location</string>
+    <string name="fragment_location_title">Bus Stop Locator</string>
+
+    <!-- Search Fragment -->
+    <string name="title_search">Search</string>
+    <string name="fragment_search_title">Search Buses</string>
+    <string name="menu_search">Search</string>
+    <string name="fragment_search_search_view_hint">Enter a 5 Digit Bus Stop</string>
+
 </resources>

@@ -130,5 +130,6 @@
     <orderEntry type="library" exported="" scope="TEST" name="junit-4.12" level="project" />
     <orderEntry type="library" exported="" name="design-26.0.1" level="project" />
     <orderEntry type="library" exported="" name="butterknife-8.8.1" level="project" />
+    <orderEntry type="library" exported="" name="lottie-2.2.0" level="project" />
   </component>
 </module>
