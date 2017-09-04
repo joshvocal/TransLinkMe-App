@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="2daa4b8669f15d1d547f91831a7dbd58cae7ab43">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_82fc7b51b341fd78e20bad1bf4607a7258d9af27/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f5ed6f77bc860bc8a07da9479bc3f05fe712205f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7161440d7495aa766599b6413d0a7296e99c90ef">
+        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_82fc7b51b341fd78e20bad1bf4607a7258d9af27/classes.dex" />
     </item>
 
 </items>
