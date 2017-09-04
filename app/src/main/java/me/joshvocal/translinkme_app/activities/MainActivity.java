@@ -1,4 +1,4 @@
-package me.joshvocal.translinkme_app;
+package me.joshvocal.translinkme_app.activities;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -6,6 +6,8 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import me.joshvocal.translinkme_app.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                case R.id.navigation_location:
+                    mTextMessage.setText(R.string.title_location);
                     return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+                case R.id.navigation_search:
+                    mTextMessage.setText(R.string.title_search);
                     return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+                case R.id.navigation_favourite:
+                    mTextMessage.setText(R.string.title_favourites);
                     return true;
             }
             return false;
