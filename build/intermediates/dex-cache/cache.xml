@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="8883b183351c9543c67fdcd4a4ee5168557b2f04">
+        sha1="cee9502bcc8d95bc50e6a60c883e6468d9973783">
         <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_82fc7b51b341fd78e20bad1bf4607a7258d9af27/classes.dex" />
     </item>
     <item
@@ -18,6 +18,15 @@
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f5ed6f77bc860bc8a07da9479bc3f05fe712205f/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/josh/.android/build-cache/ad957be0802b0c4510556129226366d7d8458ce2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ec224ad624f39212bacaf5903d989fe066166e7a">
+        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_e4b282f175e6b5a8f079772cdb1f064f2975b7a3.jar" />
     </item>
 
 </items>

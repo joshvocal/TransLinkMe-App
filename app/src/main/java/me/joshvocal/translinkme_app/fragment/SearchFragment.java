@@ -10,6 +10,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.text.InputType;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -46,6 +47,9 @@ public class SearchFragment extends Fragment implements
     // Bind LinearLayout
     @BindView(R.id.fragment_search_welcome_layout)
     LinearLayout mWelcomeLayout;
+
+    @BindView(R.id.fragment_search_something_wrong_layout)
+    LinearLayout mSomethingWrongLayout;
 
     private RecyclerView.Adapter mAdapter;
 
@@ -131,6 +135,7 @@ public class SearchFragment extends Fragment implements
             mRecyclerView.setVisibility(View.VISIBLE);
         } else {
             mRecyclerView.setVisibility(View.GONE);
+            mSomethingWrongLayout.setVisibility(View.VISIBLE);
         }
     }
 
@@ -146,6 +151,7 @@ public class SearchFragment extends Fragment implements
 
         if (mInternetConnectivity.isConnected()) {
             mWelcomeLayout.setVisibility(View.GONE);
+            mSomethingWrongLayout.setVisibility(View.GONE);
             mProgressBar.setVisibility(View.VISIBLE);
 
             getLoaderManager().restartLoader(BUS_STOP_SEARCH_LOADER_ID, null, this);
@@ -160,6 +166,13 @@ public class SearchFragment extends Fragment implements
 
     @Override
     public boolean onQueryTextChange(String newText) {
-        return false;
+
+        if (TextUtils.isEmpty(newText)) {
+            mRecyclerView.setVisibility(View.GONE);
+            mSomethingWrongLayout.setVisibility(View.GONE);
+            mWelcomeLayout.setVisibility(View.VISIBLE);
+        }
+
+        return true;
     }
 }

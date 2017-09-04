@@ -19,4 +19,8 @@
     <string name="menu_search">Search</string>
     <string name="fragment_search_search_view_hint">Enter a 5 Digit Bus Stop</string>
 
+    <!-- Bus Stop Details Activity -->
+    <string name="transit_bus_stop_details_on_street">On Street</string>
+    <string name="bus_stop_details_at_street">At Street</string>
+
 </resources>

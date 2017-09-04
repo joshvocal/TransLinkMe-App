@@ -1,6 +1,7 @@
 package me.joshvocal.translinkme_app.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +11,12 @@ import android.widget.TextView;
 import java.util.List;
 
 import me.joshvocal.translinkme_app.R;
+import me.joshvocal.translinkme_app.activity.BusStopDetailsActivity;
 import me.joshvocal.translinkme_app.model.BusStop;
+
+import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_AT_STREET_KEY;
+import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_NUMBER_KEY;
+import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_ON_STREET_KEY;
 
 /**
  * Created by josh on 9/4/17.
@@ -62,14 +68,14 @@ public class BusStopItemAdapter extends RecyclerView.Adapter<BusStopItemAdapter.
 
         @Override
         public void onClick(View view) {
-//            Intent intent = new Intent(mContext, BusStopDetailsActiivty.class);
-//            intent.putExtra(BUS_STOP_NUMBER_KEY,
-//                    mBusStopList.get(getAdapterPosition()).getStopNumber());
-//            intent.putExtra(BUS_STOP_AT_STREET_KEY,
-//                    mBusStopList.get(getAdapterPosition()).getAtStreet());
-//            intent.putExtra(BUS_STOP_ON_STREET_KEY,
-//                    mBusStopList.get(getAdapterPosition()).getOnStreet());
-//            mContext.startActivity(intent);
+            Intent intent = new Intent(mContext, BusStopDetailsActivity.class);
+            intent.putExtra(BUS_STOP_NUMBER_KEY,
+                    mBusStopList.get(getAdapterPosition()).getStopNumber());
+            intent.putExtra(BUS_STOP_AT_STREET_KEY,
+                    mBusStopList.get(getAdapterPosition()).getAtStreet());
+            intent.putExtra(BUS_STOP_ON_STREET_KEY,
+                    mBusStopList.get(getAdapterPosition()).getOnStreet());
+            mContext.startActivity(intent);
         }
     }
 }
