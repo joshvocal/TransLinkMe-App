@@ -35,7 +35,7 @@ Replace the constant TRANSLINK_OPEN_API_KEY with yours.
 * [Lottie](https://github.com/airbnb/lottie-android) - Used to render After Effects animations natively on Android and iOS.
 * [Toasty](https://github.com/GrenderG/Toasty) - Used for the usual toasts, but with steroids.
 
-### License
+## License
 
 ```
 MIT License
