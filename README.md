@@ -16,7 +16,11 @@ TransLinkMe allows you to just enter the bus stop number and be able to see the 
 
 ## Screenshots
 
+Soon :grin:
+
 ## Demos
+
+Soon :grin:
 
 ## Getting Started
 
