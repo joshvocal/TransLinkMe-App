@@ -13,10 +13,14 @@ https://developer.translink.ca/Account/Register
 
 ### Installation
 
+Use your copy of a TransLink Open API Developer Key :wink:
+
+Your API Key will authorize you to offer a maximum of 1,000 requests per day for use of the Data. TransLink reserves the right, at any time after the API Key is issued, to limit the number of maximum requests in any one day. 
+
 Navigate to translinkme_app/utils/Constants.java in the project
 
 ```
-Replace the constant TRANSLINK_OPEN_API_KEY with yours. :smirk:
+Replace the constant TRANSLINK_OPEN_API_KEY with yours. 
 ```
 
 ## Built With
