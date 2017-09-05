@@ -14,7 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +36,9 @@ public class FavouritesFragment extends Fragment implements
     // Bind LinearLayout
     @BindView(R.id.fragment_favourites_empty_layout)
     LinearLayout mEmptyFavouriteLinearLayout;
+
+    @BindView(R.id.fragment_favourites_no_internet_layout)
+    LinearLayout mNoInternetLinearLayout;
 
     // Bind RecyclerView
     @BindView(R.id.fragment_favourites_recycler_view)
@@ -84,8 +86,9 @@ public class FavouritesFragment extends Fragment implements
             LoaderManager loaderManager = getLoaderManager();
             loaderManager.initLoader(BUS_STOP_FAVOURITE_LOADER_ID, null, this);
         } else {
+            mProgressBar.setVisibility(View.GONE);
             mRecyclerView.setVisibility(View.GONE);
-
+            mNoInternetLinearLayout.setVisibility(View.VISIBLE);
         }
 
         return rootView;
@@ -108,11 +111,7 @@ public class FavouritesFragment extends Fragment implements
                 null,
                 null);
 
-        if (null == cursor) {
-            Toast.makeText(getContext(), "Error", Toast.LENGTH_SHORT).show();
-        } else if (cursor.getCount() < 1) {
-            Toast.makeText(getContext(), "Empty", Toast.LENGTH_SHORT).show();
-        } else {
+        if (null != cursor && cursor.getCount() >= 1) {
             int index = cursor.getColumnIndex(BusContract.BusEntry.COLUMN_BUS_NUMBER);
 
             while (cursor.moveToNext()) {
@@ -140,6 +139,7 @@ public class FavouritesFragment extends Fragment implements
 
         if (data != null && !data.isEmpty()) {
             mEmptyFavouriteLinearLayout.setVisibility(View.GONE);
+            mNoInternetLinearLayout.setVisibility(View.GONE);
             mAdapter = new BusStopItemAdapter(getContext(), data);
             mRecyclerView.setAdapter(mAdapter);
         } else {

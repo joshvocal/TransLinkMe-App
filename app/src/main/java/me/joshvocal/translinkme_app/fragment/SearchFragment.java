@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -74,8 +75,7 @@ public class SearchFragment extends Fragment implements
         // ButterKnife bind
         ButterKnife.bind(this, rootView);
 
-        // Use a linear layout manager
-        mLinearLayoutManager = new LinearLayoutManager(getContext());
+        // Set LinearLayoutManager
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
 
         // Decorate the recycler view
@@ -92,6 +92,10 @@ public class SearchFragment extends Fragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Use a linear layout manager
+        mLinearLayoutManager = new LinearLayoutManager(getContext());
+
         setHasOptionsMenu(true);
     }
 
@@ -171,6 +175,11 @@ public class SearchFragment extends Fragment implements
             mRecyclerView.setVisibility(View.GONE);
             mSomethingWrongLayout.setVisibility(View.GONE);
             mWelcomeLayout.setVisibility(View.VISIBLE);
+        }
+
+        if (newText.length() > 5) {
+            Toast.makeText(getContext(), "Text character is more than 5", Toast.LENGTH_SHORT).show();
+            mSearchView.setQuery(newText.substring(0, 5), false);
         }
 
         return true;

@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
@@ -26,9 +27,11 @@ import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 
 import java.util.List;
+import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -58,16 +61,26 @@ public class LocationFragment extends Fragment implements
     @BindView(R.id.fragment_location_welcome_layout)
     LinearLayout mLocationWelcomeLinearLayout;
 
+    @BindView(R.id.fragment_location_no_bus_stops_near_layout)
+    LinearLayout mLocationNoBusStopsNearLinearLayout;
+
+    private String LOG_TAG = LocationFragment.class.getSimpleName();
+
     private RecyclerView.Adapter mAdapter;
 
     private LinearLayoutManager mLinearLayoutManager;
 
     private InternetConnectivity mInternetConnectivity;
 
-    private String mCurrentLatitude;
-    private String mCurrentLongitude;
-
+    /**
+     * Provides the entry point to the Fused Locaiton Provider API.
+     */
     private FusedLocationProviderClient mFusedLocationClient;
+
+    /**
+     * Represents a geographical location.
+     */
+    private Location mLastLocation;
 
     public LocationFragment() {
         // Required empty public constructor
@@ -101,6 +114,65 @@ public class LocationFragment extends Fragment implements
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+
+        if (!checkPermissions()) {
+            requestPermissions();
+        } else {
+            getLastLocation();
+        }
+    }
+
+    @SuppressWarnings("MissingPermission")
+    private void getLastLocation() {
+        mFusedLocationClient.getLastLocation()
+                .addOnCompleteListener((Activity) getContext(), new OnCompleteListener<Location>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Location> task) {
+
+                        if (task.isSuccessful() && task.getResult() != null) {
+                            mLastLocation = task.getResult();
+
+                        }
+                    }
+                });
+    }
+
+    /**
+     * Returns the current state of the permissions needed.
+     */
+    private boolean checkPermissions() {
+        int permissionState = ActivityCompat.checkSelfPermission(getContext(),
+                Manifest.permission.ACCESS_FINE_LOCATION);
+        return permissionState == PackageManager.PERMISSION_GRANTED;
+    }
+
+    private void startLocationPermissionRequest() {
+        ActivityCompat.requestPermissions((Activity) getContext(),
+                new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                REQUEST_FINE_LOCATION_PERMISSION);
+    }
+
+    private void requestPermissions() {
+        boolean shouldProvideRationale =
+                ActivityCompat.shouldShowRequestPermissionRationale((Activity) getContext(),
+                        Manifest.permission.ACCESS_FINE_LOCATION);
+
+        // Provide an additional rationale to the user. This would happen if the user denied the
+        // request previously, but didn't check the "Don't ask again" checkbox.
+        if (shouldProvideRationale) {
+            // Request Permission
+
+        } else {
+            // Request permission. It's possible this can be auto answered if device policy
+            // sets the permission in a given state or the user denied the permission
+            // previously and checked "Never ask again".
+            startLocationPermissionRequest();
+        }
+    }
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
@@ -122,12 +194,11 @@ public class LocationFragment extends Fragment implements
                 .appendPath("v1")
                 .appendPath("stops")
                 .appendQueryParameter("apikey", TRANSLINK_OPEN_API_KEY)
-                .appendQueryParameter("lat", mCurrentLatitude)
-                .appendQueryParameter("long", mCurrentLongitude)
-                .appendQueryParameter("radius", "25");
+                .appendQueryParameter("lat", String.format(Locale.CANADA, "%.4f", mLastLocation.getLatitude()))
+                .appendQueryParameter("long", String.format(Locale.CANADA, "%.4f", mLastLocation.getLongitude()))
+                .appendQueryParameter("radius", "200");
 
-        Log.d("DDDDDDDDDDDDDDD", realTimeTransitInformationBuilder.build().toString());
-
+        Log.d(LOG_TAG, realTimeTransitInformationBuilder.build().toString());
 
         return new BusStopRadiusLoader(
                 getActivity(),
@@ -143,7 +214,8 @@ public class LocationFragment extends Fragment implements
             mAdapter = new BusStopItemAdapter(getContext(), data);
             mRecyclerView.setAdapter(mAdapter);
         } else {
-
+            mLocationWelcomeLinearLayout.setVisibility(View.GONE);
+            mLocationNoBusStopsNearLinearLayout.setVisibility(View.VISIBLE);
         }
     }
 
@@ -152,18 +224,21 @@ public class LocationFragment extends Fragment implements
         // Empty
     }
 
+    /**
+     * Callback received when a permission request has been completed.
+     */
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+
         switch (requestCode) {
+
             case REQUEST_FINE_LOCATION_PERMISSION: {
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // If you get permission, launch directions
-
-
+                    getLastLocation();
                 } else {
-                    // If you do not get permission, show a Toast
-                    Toast.makeText(getContext(), "Enable permissions for directions", Toast.LENGTH_SHORT).show();
+                    // Permission denied.
+                    Toast.makeText(getContext(), "Permission Denied.", Toast.LENGTH_SHORT).show();
                 }
 
                 break;
@@ -174,38 +249,24 @@ public class LocationFragment extends Fragment implements
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+
             case R.id.action_locate: {
 
-                if (ActivityCompat.checkSelfPermission(getContext(),
-                        Manifest.permission.ACCESS_FINE_LOCATION) !=
-                        PackageManager.PERMISSION_GRANTED) {
-
-                    // If you do not have permission, request it
-                    ActivityCompat.requestPermissions((Activity) getContext(),
-                            new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
-                            REQUEST_FINE_LOCATION_PERMISSION);
-
+                if (!checkPermissions()) {
+                    requestPermissions();
                 } else {
+                    getLastLocation();
 
-                    mFusedLocationClient.getLastLocation()
-                            .addOnSuccessListener((Activity) getContext(), new OnSuccessListener<Location>() {
-                                @Override
-                                public void onSuccess(Location location) {
-                                    // Got last known location. In some rare situations this can be null.
-                                    if (location != null) {
-                                        mCurrentLatitude = Double.toString(location.getLatitude());
-                                        mCurrentLongitude = Double.toString(location.getLongitude());
-                                        Toast.makeText(getContext(), mCurrentLatitude + mCurrentLongitude, Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
-
-                    LoaderManager loaderManager = getLoaderManager();
-                    loaderManager.restartLoader(BUS_STOP_LOCATION_LOADER_ID, null, this);
+                    if (mLastLocation != null) {
+                        Toast.makeText(getContext(), Double.toString(mLastLocation.getLongitude()), Toast.LENGTH_SHORT).show();
+                        LoaderManager loaderManager = getLoaderManager();
+                        loaderManager.restartLoader(BUS_STOP_LOCATION_LOADER_ID, null, this);
+                    } else {
+                        Toast.makeText(getContext(), "Unable to determine location.", Toast.LENGTH_SHORT).show();
+                    }
                 }
-            }
 
-            return true;
+            }
         }
 
         return super.onOptionsItemSelected(item);

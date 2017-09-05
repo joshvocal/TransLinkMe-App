@@ -6,7 +6,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.LoaderManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.content.Loader;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
@@ -17,12 +19,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import es.dmoral.toasty.Toasty;
 import me.joshvocal.translinkme_app.R;
 import me.joshvocal.translinkme_app.adapter.BusStopDetailsAdapter;
 import me.joshvocal.translinkme_app.data.BusContract;
@@ -37,9 +39,10 @@ import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_ON_STREET_KE
 import static me.joshvocal.translinkme_app.utils.Constants.TRANSLINK_OPEN_API_KEY;
 
 public class BusStopDetailsActivity extends AppCompatActivity implements
-        View.OnClickListener, LoaderManager.LoaderCallbacks<List<Bus>> {
+        View.OnClickListener, LoaderManager.LoaderCallbacks<List<Bus>>,
+        SwipeRefreshLayout.OnRefreshListener {
 
-    // Bind Floating ctionButton
+    // Bind FloatingActionButton
     @BindView(R.id.bus_stop_details_favourite_button)
     FloatingActionButton mFavouriteButton;
 
@@ -57,6 +60,10 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
     // Bind ProgressBar
     @BindView(R.id.bus_stop_details_progress_bar)
     ProgressBar mProgressBar;
+
+    // Bind SwipeRefreshLayout
+    @BindView(R.id.bus_stop_details_swipe_refresh)
+    SwipeRefreshLayout mSwipeRefreshLayout;
 
     private RecyclerView.Adapter mAdapter;
     private LinearLayoutManager mLinearLayoutManager;
@@ -81,6 +88,7 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
         // Set the action bar back button to look like an up button;
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_close_black_24dp);
         }
 
         Bundle extras = getIntent().getExtras();
@@ -93,6 +101,8 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
         }
 
         mFavouriteButton.setOnClickListener(this);
+
+        mSwipeRefreshLayout.setOnRefreshListener(this);
 
         if (isBusStopFavourite()) {
             mFavouriteButton.setImageResource(R.drawable.ic_favorite_black_24dp);
@@ -154,17 +164,25 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
 
     private void addToFavourites() {
         if (isBusStopFavourite()) {
-            Toast.makeText(this, "Deleted value", Toast.LENGTH_SHORT).show();
             String[] selectionArgs = {mBusStopNumber};
             String selection = BusContract.BusEntry.COLUMN_BUS_NUMBER + "  =?";
             getContentResolver().delete(BusContract.BusEntry.CONTENT_URI, selection, selectionArgs);
+
             mFavouriteButton.setImageResource(R.drawable.ic_favorite_border_black_24dp);
+
+            Toasty.normal(this, "Deleted from Favourites.",
+                    ContextCompat.getDrawable(this, R.drawable.ic_remove_circle_black_24dp)).show();
+
         } else {
             ContentValues values = new ContentValues();
             values.put(BusContract.BusEntry.COLUMN_BUS_NUMBER, mBusStopNumber);
             getContentResolver().insert(BusContract.BusEntry.CONTENT_URI, values);
-            Toast.makeText(this, "Inserted value", Toast.LENGTH_SHORT).show();
+
             mFavouriteButton.setImageResource(R.drawable.ic_favorite_black_24dp);
+
+            Toasty.normal(this, "Added to Favourites.",
+                    ContextCompat.getDrawable(this, R.drawable.ic_favorite_black_24dp)).show();
+
         }
     }
 
@@ -189,6 +207,7 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
     @Override
     public void onLoadFinished(Loader<List<Bus>> loader, List<Bus> data) {
         mProgressBar.setVisibility(View.GONE);
+        mSwipeRefreshLayout.setRefreshing(false);
 
         if (data != null && !data.isEmpty()) {
             mAdapter = new BusStopDetailsAdapter(this, data);
@@ -219,5 +238,10 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onRefresh() {
+        getSupportLoaderManager().restartLoader(BUS_STOP_DETAILS_SEARCH_LOADER_ID, null, this);
     }
 }
