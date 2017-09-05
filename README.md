@@ -1,5 +1,19 @@
 # TransLinkMe
 
+## What does this do?
+
+TransLinkMe provides a way for the user to store bus stop locations for easy access of bus stop times.
+
+If you want to find out bus stop arrivals at a particular bus stop by texting, you have to text the bus stop and bus number.
+
+```
+Please text [stop#] [bus#]
+for Next Bus times. Buses at
+##### are: ###, ###
+```
+
+TransLinkMe allows you to just enter the bus stop number and be able to see the arrival times for all buses that come by. You can save bus stops and favourite them for later so you don't have to search for the bus number again. :raised_hands:
+
 ## Screenshots
 
 ## Demos
