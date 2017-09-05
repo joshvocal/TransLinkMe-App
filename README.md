@@ -33,7 +33,7 @@ When you text the bus stop number, it only gives you the next couple of buses.
 ```
 TransLinkMe will give you the up to the next 6 bus arrival times for your stop.
 
-So I made TransLinkMe because I didn't want to type like 3 extra characters and wanted more bus arrival estimates. :sunglasses:
+Made TransLinkMe because I didn't want to type like 3 extra characters and wanted more bus arrival estimates. :sunglasses:
 
 ## Screenshots
 
