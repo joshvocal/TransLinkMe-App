@@ -188,7 +188,7 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
 
     @Override
     public void onLoadFinished(Loader<List<Bus>> loader, List<Bus> data) {
-        //        mProgressBar.setVisibility(View.GONE);
+        mProgressBar.setVisibility(View.GONE);
 
         if (data != null && !data.isEmpty()) {
             mAdapter = new BusStopDetailsAdapter(this, data);

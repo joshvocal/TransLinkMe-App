@@ -9,32 +9,50 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/animation_view"
+        <ProgressBar
+            android:id="@+id/fragment_favourite_progress_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            app:lottie_autoPlay="true"
-            app:lottie_fileName="like.json"
-            app:lottie_loop="true" />
+            android:layout_centerInParent="true" />
 
-        <TextView
-            android:id="@+id/fragment_search_welcome_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/animation_view"
-            android:layout_centerInParent="true"
-            android:text="Looks Empty in Here!"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        <LinearLayout
+            android:id="@+id/fragment_favourites_empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            android:visibility="gone"
+            tools:visibility="visible">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/fragment_search_welcome_title"
-            android:layout_centerInParent="true"
-            android:paddingTop="8dp"
-            android:text="Add some bus stops to your favourites."
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="like.json"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Looks Empty in Here!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Add some bus stops to your favourites."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_favourites_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </RelativeLayout>
 
