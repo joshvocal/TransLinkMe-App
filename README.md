@@ -7,7 +7,7 @@
 * Finds bus arrival estimates by bus stop number.
 * Finds bus stops nearby so you don't have to type in the bus stop.
 * Allows you to save bus stops so you can check bus arrival estimates later on.
-* Tells your more bus arrival estimates than texting the stop.
+* Tells you more bus arrival estimates than texting the stop.
 
 ### What is does
 
