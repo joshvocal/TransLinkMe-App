@@ -2,6 +2,16 @@
 
 ## What does this do?
 
+### TLDR:
+
+* Finds bus arrival estimates by bus stop number.
+* Finds bus stops nearby so you don't have to type in the bus stop.
+* Allows you to save bus stops so you can check bus arrival estimates later on.
+* Tells your more bus arrival estimates than texting the stop.
+
+
+### What is does
+
 TransLinkMe provides a way for the user to store bus stop locations for easy access of bus stop times.
 
 If you want to find out bus stop arrivals at a particular bus stop by texting, you have to text the bus stop and bus number.
@@ -12,7 +22,11 @@ for Next Bus times. Buses at
 ##### are: ###, ###
 ```
 
-TransLinkMe allows you to just enter the bus stop number and be able to see the arrival times for all buses that come by. You can save bus stops and favourite them for later so you don't have to search for the bus number again. :raised_hands:
+I just wanted to recieve all the bus arrival estimates for the stop without having to type out the bus numbers by texting. Sometimes there are multiple buses that you can take to arrive at your destination and it doesn't matter which one you take.
+
+When you text the bus stop number, it only gives you the next couple of buses. TransLinkMe will give you the next 6 bus arrival times for your stop.
+
+So I made TransLinkMe because I didn't want to type like 3 extra characters and wanted more bus arrival estimates. :sunglasses:
 
 ## Screenshots
 
