@@ -37,7 +37,16 @@ So I made TransLinkMe because I didn't want to type like 3 extra characters and 
 
 ## Screenshots
 
-Soon :grin:
+![Screenshot 1](https://github.com/joshvocal/TransLinkMe-App/blob/master/screenshots/screenshot_one.png)
+
+![Screenshot 2](https://github.com/joshvocal/TransLinkMe-App/blob/master/screenshots/screenshot_two.png)
+
+![Screenshot 3](https://github.com/joshvocal/TransLinkMe-App/blob/master/screenshots/screenshot_three.png)
+
+![Screenshot 4](https://github.com/joshvocal/TransLinkMe-App/blob/master/screenshots/screenshot_four.png)
+
+![Screenshot 5](https://github.com/joshvocal/TransLinkMe-App/blob/master/screenshots/screenshot_five.png)
+
 
 ## Demos
 
