@@ -9,7 +9,7 @@
 * Allows you to save bus stops so you can check bus arrival estimates later on.
 * Tells you more bus arrival estimates than texting the stop.
 
-### What is does
+### What it does
 
 TransLinkMe provides a way for the user to store bus stop locations for easy access of bus stop times.
 
