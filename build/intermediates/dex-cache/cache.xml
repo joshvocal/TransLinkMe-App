@@ -2,508 +2,679 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/077e35c40ed70f12b0368850ad094876c6966327/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="c1b91bc7e480ab100d0397b16c93732e26fd10eb">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_46064df2c48012951dccd6701f4da0d8ef98fdb5.jar" />
-    </item>
-    <item
         is-multidex="true"
-        jar="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/jvocal/.android/build-cache/c728fe041fd74025a58f951d65c9ba3874eaa4f1/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="83b2b9c67091c65b3f1a89cd78691335c9a80d95">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_82fc7b51b341fd78e20bad1bf4607a7258d9af27/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/11efbd21190a1419939d300380c68024eeca01d1/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="4b685077cdb08cf7ae8b61afd1fe910e47d91b9a">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_05af3fdb7743591f204b417d60417afcbb700575.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/de4d29e8bf714b061fe03723a2cff423076f5ea9/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="c6aa915c08cfd82780c10d4b957018bf819a48e2">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_cf0188f089636c0200790937192316f66dcb3296.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/b7300eca7cba218d4118390fa4a156b4db3a6722/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="fc3036436defd3070337b7191c50a136ebca7f8f">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_79f119f713f8aad0f3abd27d2afc35c6a55d3833.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/71bbb6c0b22ee99ac470cd2f72a7063e11079b88/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="5734c03faa42bb254d3f05d656f7a7036cb096b6">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_388f13b8628091365ebf95d46b201dac6bc62eca.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/080ed9802812fbe16551b9a57a091859fe1693a9/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="f5ff5e3811e8c9485fd27f9052ae4d4d23a22d9d">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_b3dbe7f70439f3e1b9c325feacfc58c4333b1ffe.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/4cd99eeb9a18d61d0ff7eb623c644fa31cce4eba/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_3d7418856c135b5f4bec971fe979ab5f8a931b36.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/d65618ea9ffe3bc17a0510def39675701a96fa89/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="eea424e61a0c85b93a0e477565314a58136abaea">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_1abb583f871e275cb90c7068d939659827478f8a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/2c7caed7451c52b14fa0ee287972cb088224cc3e/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="c6706cc7c8c3093560edd55d322218afe7798aa9">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_d3d7d82750e436445bf3f74c75fcbf95d2fdb9bb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/571b4b34701f0416a0e97ba4e5cc570cd730ea38/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="c8bf878c09bf0df6ae76eb6c2df38c6a186b38b7">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_9889e73cde3a7bdf8585d012fffe2068072eb429.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/1f0655eb0278a152ad846608ba715e79fbfc6473/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="2b12b18c5518021cc71577c83d1290f8ddaa3c98">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_04ab2403c92dcfb89eb67fae191ddc946329a2cd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/af36f39d366cf88b23f6a0c7fc1007fc55b117af/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="6b3430725095bd46b785e97bd34240826c27b4db">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_f73b6bf8881a950edd21042b5ae9b976bed3c7e3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/ccc99856791868ad93548edb3f166eaa3248d8cc/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="377c5f26ebf67f3fa6ef2f663a58cac7ce647dde">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_eee2d79d52c2a24d344e1eb49bbcd166103f8608.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/59fb88e491b457c504f9105fd08368d3ced9e5cd/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="dae0d68af4c87df40eca67069861e53b7cefaaa0">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_cc5043e09bc6c8edd47a255689a9bc7dbc500361.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/a7f875a60c41695ddd6f8ffb5029a94c53d44fc6/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="f15e20dd7bcde7c688cfda44d0c8320a5c1c24b8">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_387be45c81ce780235b0ee3855a667843d6c840a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/07a7311e1781834d95559b8d49d292d5551cafee/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_5b082214d5ddbe4f93756529b8ff12a2df181e88.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/28a5bfac32d1a3a35475c4acd2d0a72cbc819f9d/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="a25b0b5aec89681b95d32780ad7904c1e1e4c679">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_4c07ce5f7711f0a5e70170599fa9e3ce77583e42.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/8357a76e6813f564de7963d740b9b059720bce45/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="56d68d1174b9c1e368017a850b62b12429f39757">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_638c6ca58c2d12c9989a057297303e8391dc804a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/638c4ae040ce6f4c9fb4d9c11d8c51b8a9edfd34/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="f2cb88e7e28736d44e7e643deb80c9af1c3662c8">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_5e7fcc5326cc7aebeb74886ed542a8034139b593.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/adfc80cd869463253733d5b07e928605583c60b9/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="34c23b5894b4f24d566bfc33e0e25462c6436b78">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_791e734ed6fac0c861014f16a0c4e82d78c9849d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/e4f8365cc7deb4c7e1efcc8f34f40ec456d56c7c/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_4433cceb6c785010c11f049be108613741b45e5e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/21b7e57f935100535d3bd0aab11c2f55f6ae54c2/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="d8942ee348aaa9341f08f7e2437063893fe27542">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_b0fb2495b3de8aea737b64be8090cc3a7b7c4ee2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/d43a260be990ff70342bb7f68f0b6ab4dcb314c5/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_9a09a7df3c943b28f1b34bbde96cf90f0fb2b9ea.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/73dcc61130084117392d1ed8abee5af49fbd5e0a/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="c175c3009577fad8b433703f5d7ac2dc21d3871f">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_1806c7e2fa75caf9081e3db69d2d29ba10d42da6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/fa170f89785946d7da6fb2b1eb472d795aa82724/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="2c379c235d7983201bb83edfc3c60bb0dafb5805">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_1f4dbd63c7527ad1aaf5385c75239731df6c9407.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/65c4f12bf78d94a18b3825fe7ef15fc7a85ec6fb/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="057fb316bed8467398333f30926c2d5506e275b2">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_bb0e4b5df8cdacd64342bac4aecf9250d540dfd0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/c52e356e9bf146c6ab1df5fd9b30d61af9660f52/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="b5b6af36bacf1d812cd3dc45f9dcab9ea471ed91">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_599b94e2916253649138fa758ee99850d6ae1e96.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/cb30bc3010f4cce2f594d30fb2d4b8cf1576d354/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="fcae52a60bc07924d370b4d376116cd8f8581f54">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_8f02922bc3c8c91074ae57bf79bc25ff3469bbef.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/34e8c745398afb674a375168767a3087ef2592b2/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="f47f4d5bdfd7d7bf330945b8a7ccce4ab437a710">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_9cd1cfa52620533f9d159ea19a6cc862604cc0f7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/827611ef40f840f4e657a381f555d852f8ea823c/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="e5b429c146094a612134910688d169ec08deeefb">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_d5635736c6525f11f29ecc9e518b6ef2dd0275e8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/65913c4b3446b2a0344b01540e6467d7f2829d7b/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="ffd0ddf5e57b4d60c4a3fbcd38fa20349a0cebd1">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_70d1ed5b16b7ea062cc61ebcc0b584fa8f224c53.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/37343760de05dc435d6fbf669cc73542d0f2b1f6/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="416fb9ee2fd6e7af0bba04b01d90cb475b1e2074">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_4c5d97058b66414fdacc522375412eb412b8b921.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/50053d16855a01531156a3158b676abd3ac12c42/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_043b5a2bb946fb557214ad99f0427b65e41cad4f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/000ac67ca5f6b168adc4e4b7deb8154baf91f580/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="02b91f8efa91dcdf5c555ee24b7f006f02cd0f8b">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_d5fa9741781c78dc2baf25b284e7a80301e10f59.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/8d2ebd8f39565a221dca605224f57e393b89d07c/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="bfba7cf662f7e3e2cfeb92226c6b84c08e590225">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_1b4d0afdd13e18131f2aee252bc61f7144460407.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/74c07f6c3e3550ff4ad4c09c1646368e0edf4a07/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="8544f739799dd15db63927073a21312864ab0bfd">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_02cdbd70fb58ef617336ed525b7d0ecfb7404a82.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/29f13fc294e82426e5fcfe3140bd06815b876d38/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="63b03eaa1aa9b9431c7638841175f9842dcbf274">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_0546a93f3b8ebdd2c385a783760fcb884d0ba99b.jar" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_34693bd8b9b83545fb2c424c8316dbb20110c53a/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/jvocal/.android/build-cache/b6801831efbbc25319a4deee920d411d7ac8fdb8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f47f4d5bdfd7d7bf330945b8a7ccce4ab437a710">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fc3e5c4000154510f882da9ea63f50cc9687b9e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/fb3fb3ee0655ecd3b0e4871eb6dec27895ac76f9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c175c3009577fad8b433703f5d7ac2dc21d3871f">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5071353d87e140d871738fad25a9327ea9083b86/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/8379a35450d4f4dd696ee24fb423edf865ed48bd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="56e96fa067ba358a6c60184e40947810dcd78f30">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_937cd1293fc48f50b8582dd229dc17ea34a3e25c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/f9d69cafee3d18fe07734f37a969b197790d4d3c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_78e4c35087684e4cd7442789a2fb8d26c20978ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/810cff8e54a761fc7bcec8ba19b451b6cd32bbfa/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="34c23b5894b4f24d566bfc33e0e25462c6436b78">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9d965b5b7fb69f89d18b8134ffab23fa4b5f91fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/c2655e51b45810b245fd9f0b02a78821e9359ddf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c1b91bc7e480ab100d0397b16c93732e26fd10eb">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d5f6febafd7113fa437015c1f3a8f45a8e3865bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/aaa211902617c2bd4d6a4acc097787d3f81ced5f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0176d8aac0bf97fbae190b5de272b4e078795395/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/e71c1cdd55b67d1865e26a8ee51866c3cf21b07d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b5b6af36bacf1d812cd3dc45f9dcab9ea471ed91">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ae398071e198f72a228f980c9ecd8ca10c8d9990/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/f433e397fee3094c510d5af1fbe2edf3972ccbce/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a25b0b5aec89681b95d32780ad7904c1e1e4c679">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_98d77e6103b770e5053b4d5f9298cfb07c893dfa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/675e994bc93dbf2e5f7ce13ccc635e2971edac5e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="af13a350b71b437ebf4be335d02a8f785c39b111">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d1747800b207427b49a2d6c5aae3c811f9333f92/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/694790344114dfcb54d438d106635966d679bd62/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ffd0ddf5e57b4d60c4a3fbcd38fa20349a0cebd1">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_547e8a4e2253640cbe43f692acf75be39fa4f5fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/23ebebc4e0151092832f1ee5b5f4a9fd147c8596/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c8bf878c09bf0df6ae76eb6c2df38c6a186b38b7">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_94940432699d0162a93ad9520c5b9c3f3fcb5199/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/8bd4805405d7bc6c4a6fd74041fede236b30adbf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0bffdc0bd4f7ca0e27c5bfeef39569f8da00aa26">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_363637850eb885951a2575050e558f70fb0ff43d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/7ae958ba581c86bb885f26af7d4c1bb42f8baf28/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="681eeeaec5300e5257ad9bf889c3859ba3833d5a">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_51f56406b55d1f99a5d10eec677f23f1df8f8c35/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/d4a8961cc1737f67d1434a76de0b6cecde21ca71/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b0b079ef3d373f7ede92613594aca5ed72946d2a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/b3ced8ba920012b1763afea306ac6bb8fbb89c22/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f15e20dd7bcde7c688cfda44d0c8320a5c1c24b8">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bdb4b4796b47b27539e705138cfa4904495de6b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/e48e50d2618494fbbd4ece16010786031be1029a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c6706cc7c8c3093560edd55d322218afe7798aa9">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_601a74d758c5a897efab752d7a8dcfe3fbd468d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/134655325e212beb33bbc4686e15a9026d394ff3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6a2bcb61342d09fe9acf55c9daf63961c8866cc0">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3f5110325a0c6631fda1cae81e0c14da96809a14/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/f480e89dfd9602af4d965095b096fdc5048eb718/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5b65ec1ebc84af3baecfd28954c9e7ff01b937a8">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6308db2b4b30b52a696c402f50518dcfa6c93514/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/d5cfc7d1c643b52d54b3db8af305f2aab0d78f24/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d095503f29a8dedc55b9326ed97a5902a1527ab9">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d56c08e42f2f9a7869175e0c9892833f1b134061/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/2eafe6d1653841dbf54cc50543d392b33f5c1c1a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b3701e8e07ee9787ec1130b2797ac175aa7ca1cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/e298c542c1299436cdffd5cc0b88c187a6646783/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="377c5f26ebf67f3fa6ef2f663a58cac7ce647dde">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6f07683aa2679725aa95052448c7601e51fbf3d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/e0f3ec33d2ab4916c4f4aca02577afe6c19b3bdf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c6aa915c08cfd82780c10d4b957018bf819a48e2">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6f82d1162827ceeedc5960d8f9b914cc70eca8e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/50d418790df801ee8a61c2bd3f9fd9944248679b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3ac08c35419ab7cf9146969de471768dbe502f0f">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d874926883a3510738ae72bf19406b33163f776a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/73f84991279acf36a9f1ae6c26e625b4af63d824/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dff4d8f88fe2c0e57306e6981fd9b90caeead7e3">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7201aa8d4149bc11f5bcd22734e3edb04bb5596a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/16c335ce139fc77defb59f11b90bc7aa9cbb563a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fcae52a60bc07924d370b4d376116cd8f8581f54">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_db91eadae5afd4d5f49f4eff34b192d3b6bc906c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/830c6752ab3b8deb8488ee93d58ef7760049b8cc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e7f890dd2539b7f2582f450f0721e2dea6ae510c">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9f7e265364eb8f35dac810cd5e4cadb06eca0beb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/74dbf27aae4b79aea8c6ac3c72eee0b7d91f80a0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7a2972a6bec378b7c42acb2f4b631686fd0c8063/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/02a83f2ca9fe5bd5ae25dc342b7bca106547da1c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a4590fa7eadce322ca893129fdc999074e1aa5bf">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a2df326b70a30aff70fff097bb8f54c367414e5f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/9bf909969415225037b6582510e1ec785d322547/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e7424f816f538c2acfba6169b25e297ea22afbd8">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_28f35f85f6ba7d2c282f1ffb156568a62aa992fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/188a1933ddf318a67f466ea6b4da7c70ecafe1fc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b0b16a1f431d0949b5d4805642647a489816f5b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/b2622a05fd783698e9fb159224305fed8bc5e80f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6711779bc9364c2e366c5e31d8423b6167fc36e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/aae6adca025d34d92d80cee6c1f3491937dc05e3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d8942ee348aaa9341f08f7e2437063893fe27542">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a53bfc7f3bd80229ed9a4b775458a5703b37a2c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/8b60a22f72e00dd127735114d6efec7640aa196c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a5d52089bf4d31537232bb6bcb70cee817d8a374">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2796f35fdb6166023d0537f8b938e00f724ea97d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/1aed49d64c448bc307f5e6f23ae4cf8fbe58d73c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="416fb9ee2fd6e7af0bba04b01d90cb475b1e2074">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d6acd67210221bbe4c580d5ab9eae545018b55cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.0.1/e1bb32b12b25e2f78e6786059ca7ea878f8345e0/support-annotations-26.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e1bb32b12b25e2f78e6786059ca7ea878f8345e0">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.1_c9228ebf0425ae9b20ff5c3893e8c6a40db3a2e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/d6b7c5041f6654fa4ab7f37763a52cc263c9844d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="63b03eaa1aa9b9431c7638841175f9842dcbf274">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5ce658a6fecbc381be8109c96a3a5ae2a883033c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/c37c6f5a7ca27e521862bd391be097326e73c742/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2b12b18c5518021cc71577c83d1290f8ddaa3c98">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6cab56a9ad4c396911286f9e3e003c235cfa3c79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bc373fb6bc7bca3035041b924f158fd2b946ee8d">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.8.1_8c57a44a1f2d4441e702ec976c41c9d7f7f04be2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/b5b1c9fa4f0453d928a496892de7f6be363b8342/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_683d9f519fdeda267f38a25913c590081a18ba71/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/bd81ecedbb44038fb6a7f95601664c632a9637c6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="76ea35b41786082af23db898ca9e0fc07cc71fb9">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d8407d0de9be738782cb1093dd2dd844a3b86683/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/cd65b72d7bff3ee7702c6af9f90aa98fb44b9084/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dae0d68af4c87df40eca67069861e53b7cefaaa0">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_412399e933ac712c9a3a3f932b52d1cb8fb14063/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/6f93ee972bc252eb49917a4104419f8d39ec5fab/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="02b91f8efa91dcdf5c555ee24b7f006f02cd0f8b">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d6431c1bc2e60c341f4d1b51416f4d969ec46ef2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/ee5fde2921c35a33b54fce15e243d5bd98466a38/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f2cb88e7e28736d44e7e643deb80c9af1c3662c8">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1d03f8561d1923465723596e4238ec6c27edeae8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/26f9e66b5d26decc825442b2986c4098ba627b26/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6b3430725095bd46b785e97bd34240826c27b4db">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_95b0f2de6461d8709b76079d3eb20fb08ae39e00/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/4628524df250b1f880130e34fccc4f300d47c437/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_411e1cea158c03cdae680424b3a419d5ad1222a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/61cf704b126023a3337e56168568663241551c63/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ec224ad624f39212bacaf5903d989fe066166e7a">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5edb928fc3c8c8b12b8f3034c3012e6c42690d95/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/112ac2cce97d5679c19e8c282a65162bbdb579ea/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8544f739799dd15db63927073a21312864ab0bfd">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_29c1fd05ad10b9fe53c391b60da41fe90e86f6ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/0cbf1b35316ee5f50c5de72bae33495c7d8523c2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="576570f46ff6ccc69a984af9e55ddd58d9549270">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_18d8259aa3463cc0f4d20416cd3674a2fcb77064/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/f26ce2cdb405a6ea19a00a931fff7fab7435f7aa/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2c379c235d7983201bb83edfc3c60bb0dafb5805">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e03fcb506c89bcdc02655e85331039ee86061025/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/4c29c5c5285b9f01e08d260ff0efc29835ac33be/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2c73e2a93e00abd240e495c1e62217e53904a3f3">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fca76c509c60e46b455d9efdb2c4591001296154/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/cd307aa58ad0dd7fd048b7ccc88fc729f783108e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2c2f1b3f82c027e98f56bb0154de0acbcce42e6d">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b6fbc4aef8abab5cd0322c0d15c4a62c16951ee0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/b5c8e5acd5c28ac3156fc22270d1598755be8f66/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c72b1515efbd8ad652e2d63582c8234a979b1e53">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b03da734557562ca5f98e93acd8b24a6cdb5aaba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/b138d1a439e4fc140ea57ea17e68938049a1be69/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_22086d039678e033a1b4ced0b90a8ba856de0914/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/c2b01ea7aaa28a445ca6594da0c6d734063a626f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="56d68d1174b9c1e368017a850b62b12429f39757">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bef3233b8b18c84db5b7641dd16a088ae69bfd3e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/e3bcbf5c1e7c0bbf2823dde9b85a534d0ac1744f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="71af915b7f4f7ec0b5f768b365145bb6a5cb9a66">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_006b10f58bad9dea17349c847906235221f7a09b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/7cb84823e942f52e32deb3e83dc062b58f63d47b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9be5e957849eb82ad9addf9bdb2896de8bf5654b">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_41ca76883e5a04142ee9fca9cc39832c9891defd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.0.2/b9cd8fc6bd15cb915735d34535db30ece0c44603/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_f5a64e2fd0a3f5731d0f80b3c185a0c091d4a8ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/2a8bbb1592e70977e78f54a8d57ed27261f011a4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1b12397bc9f342b29d9e9108978828f99a6da579">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3184b7550b733287db3d5faaf2608fbb604d225b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/e8a15504d2498a8b0fcae0a8eb40d81b0253fbc4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4b685077cdb08cf7ae8b61afd1fe910e47d91b9a">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a287f0060d684cbc71e34552ca81cd90460b0b0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/19593403893a71cc14221c20bd8e962a24e6039e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2f60cd49708e65fc0deb82f258fbba11e2a44309/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/d8c22469f75b4d43db294d62d6a0380b42d70990/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c390af22079a61fdc42712c19f15a700f1fc2cbf">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3074f38a5d6d6c54787901a9ebfb56c887801f29/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/2d125a43c239da3507fb254c519e91dd08121963/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fc3036436defd3070337b7191c50a136ebca7f8f">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9ac0d754a504c9ad8c03eb00bb9e89fde40b4d06/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/3fc4425484d6393fe3e6f31b4c1d4174f98908f0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="eea424e61a0c85b93a0e477565314a58136abaea">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_711f29ac3333c5a688a0ee355ce73a49b959f453/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/f456dc8d62e09d9472bbad186d93d1c90440343a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="22c673e65215e0764add61e3102946de895439e4">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_afca3c823bd8d1867d2b56968347b607aa20d2a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a81029623ecdce51eadb321951916c8519c6ab09">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_09b40794eede8f5eff86cdd16907e8348bd24d38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f5ed6f77bc860bc8a07da9479bc3f05fe712205f/classes.dex" />
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_84f18b7ef7e54429752f13e7d7b5b0717e27f2cd/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/e6a89c34851b37f763047140fe3cd8e932a171f0/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/6e96772698d7a6d208e6357dbe2ccee247d0cb20/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="576570f46ff6ccc69a984af9e55ddd58d9549270">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_df227aa17c1c1e0d5079e8356d86ef7cadb29017.jar" />
+        sha1="057fb316bed8467398333f30926c2d5506e275b2">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4cae07e46f94c6d1d304a623740590f56f34dac7/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/1fb3c3b8763a7eef66de04a72295ae00e8153077/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="3ac08c35419ab7cf9146969de471768dbe502f0f">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_230639d38ec826c757db506aaeca5a95dd2710e2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/aa80420e33de285d5175aff01cbb71c895476684/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="e7f890dd2539b7f2582f450f0721e2dea6ae510c">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_feed830a91c08cc52416c565a09ffd5b898477a5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/230a66dddeb92ae4c5bcfcf8e2122906a4c4aac1/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="1b12397bc9f342b29d9e9108978828f99a6da579">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_2aa4bbabe5e28935c6ae4076a196d6e255958d82.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/29cfdd08488cfcca658d669e36c010618415f08b/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="c72b1515efbd8ad652e2d63582c8234a979b1e53">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_94e2f69fa9c8549b6545d7c54f4d8fa82dd99439.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/fbca53a08fe3107943e8cda22a41b2da428bd9f4/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="2c73e2a93e00abd240e495c1e62217e53904a3f3">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_1c167c7b49acf9492347f2863db91695bf63062c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/7df9bc6b3d6599504ed620080d3f9006606bef98/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="2c2f1b3f82c027e98f56bb0154de0acbcce42e6d">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_a7200d83c8207bd87de2254d9858e75076ea7864.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/2fd85f7e36aefe06ddcf9e6523b1e592b49345ca/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="0bffdc0bd4f7ca0e27c5bfeef39569f8da00aa26">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_5e2c2e59911726344be8dd8dd5a128c47e0d03b4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/26ad4b394667817290c17af099d30a7754b92bed/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_f7a68a0bbb205cb97ca78c581e134613cdafc000.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/0877c1accd434f3332dfc2126b727140ee27bb0b/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_f7d7692c8be228389ccda9246302b17ec87af149.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/d9e64bccca1400b032ca34d7c5f5cda74043199e/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="af13a350b71b437ebf4be335d02a8f785c39b111">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_43c547d31a88ee12b26534eb1cdad818a9f9ae50.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/8d22b983d74115d7ea818e9ad0229aad09c24a0c/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/d9b276edd528d45e40e5525ca1bc99c237fac71f/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="5594a368622908d89c47d9a391aa2724fe046c35">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_b84c60d50a476ca3cd31d1afb3cb4203c650a091.jar" />
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4538755a0cb63468732db644ddc67593ce468170/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/4d99bb5d33d2885ce27748d9c30f3841723af058/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/736a9c670552379aa5b23e112cbafee2edd9c5fd/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_ed7d739944d400d2fe79295dca9e69512531374f.jar" />
+        sha1="f5ff5e3811e8c9485fd27f9052ae4d4d23a22d9d">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_48c20b2a2e75d55903b8189fb9f9b5ee8217f446/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/399c8a51ecb9d8a29a9ef6ceaa5dfcf06014e8a1/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/51a7ad911612e6145e38d6481ba8fdeb21a2d176/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="76ea35b41786082af23db898ca9e0fc07cc71fb9">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_7f79108f5d9d9fe124285429e06a3e7acca300bd.jar" />
+        sha1="083e7bc5a9d9404b49b8f34e5091532361fa28e6">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3aa7e0486c93cbde45119f312b67ed0abec47384/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/7e447577217fa8101c40d433432090cf32e32327/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/e770d7b8c27c8137f5b6a37c113146c0fe829b5a/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_e5964c7a1136a6afb7024307910a23d6069e9051.jar" />
+        sha1="bfba7cf662f7e3e2cfeb92226c6b84c08e590225">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3acc16791a299879b0e237041927c0d4a375ce82/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/427e4eed50c974a0cf311a7fd0504de1b4520a9c/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/4121fcde9c6dba01d52ae9657f15050abd27cf2a/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="a5d52089bf4d31537232bb6bcb70cee817d8a374">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_03765a4d995eb259f78275481de44b15c07de534.jar" />
+        sha1="10c32fcf3d0acc4b208fc39f8d2e16b69ef8bd3b">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_91e91e04cf4f3deaa2ebc7132e0c9134ef93486c/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/josh/.android/build-cache/3e333f7e46fd3e05736c674d6a845dd2e9d9af9b/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/jvocal/.android/build-cache/b9eed9c1743815109be73c0b3346319799215700/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="9be5e957849eb82ad9addf9bdb2896de8bf5654b">
-        <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/pre-dexed/debug/classes_551b2bf6544571a28d536a124636a1cc4d4e8982.jar" />
+        sha1="5734c03faa42bb254d3f05d656f7a7036cb096b6">
+        <dex dex="/Users/jvocal/Documents/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3d560175366f028be753a30648057ddb20d456ca/classes.dex" />
     </item>
 
 </items>
