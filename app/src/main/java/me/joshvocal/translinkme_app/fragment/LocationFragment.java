@@ -2,11 +2,14 @@ package me.joshvocal.translinkme_app.fragment;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
@@ -72,6 +75,8 @@ public class LocationFragment extends Fragment implements
 
     private InternetConnectivity mInternetConnectivity;
 
+    private Snackbar mSnackBar;
+
     /**
      * Provides the entry point to the Fused Locaiton Provider API.
      */
@@ -95,12 +100,18 @@ public class LocationFragment extends Fragment implements
         // ButterKnife Bind
         ButterKnife.bind(this, rootView);
 
+        setHasOptionsMenu(true);
+
         // Use a linear layout manager
         mLinearLayoutManager = new LinearLayoutManager(getContext());
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
 
         // Get location services
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(getContext());
+
+        // Bind SnackBar
+        mSnackBar = Snackbar.make(rootView.findViewById(R.id.fragment_location_coordinator_layout),
+                "Location Permission Denied", Snackbar.LENGTH_INDEFINITE);
 
         // Decorate the recycler view
         DividerItemDecoration dividerItemDecoration =
@@ -133,8 +144,11 @@ public class LocationFragment extends Fragment implements
 
                         if (task.isSuccessful() && task.getResult() != null) {
                             mLastLocation = task.getResult();
-
+                            Toast.makeText(getContext(), "it worked", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(getContext(), "nope", Toast.LENGTH_SHORT).show();
                         }
+
                     }
                 });
     }
@@ -164,6 +178,16 @@ public class LocationFragment extends Fragment implements
         if (shouldProvideRationale) {
             // Request Permission
 
+            mSnackBar.setAction(R.string.fragment_location_snack_bar_settings, new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                            Uri.parse("package:" + getContext().getPackageName()));
+                    startActivityForResult(intent, 0);
+                }
+            });
+
+            mSnackBar.show();
         } else {
             // Request permission. It's possible this can be auto answered if device policy
             // sets the permission in a given state or the user denied the permission
@@ -229,9 +253,7 @@ public class LocationFragment extends Fragment implements
      */
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-
         switch (requestCode) {
-
             case REQUEST_FINE_LOCATION_PERMISSION: {
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
@@ -246,11 +268,13 @@ public class LocationFragment extends Fragment implements
         }
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()) {
 
-            case R.id.action_locate: {
+            case R.id.action_locate:
 
                 if (!checkPermissions()) {
                     requestPermissions();
@@ -266,9 +290,10 @@ public class LocationFragment extends Fragment implements
                     }
                 }
 
-            }
-        }
+                return true;
 
-        return super.onOptionsItemSelected(item);
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

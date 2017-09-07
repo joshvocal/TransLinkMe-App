@@ -23,7 +23,7 @@ import me.joshvocal.translinkme_app.fragment.SearchFragment;
 import me.joshvocal.translinkme_app.utils.InternetConnectivity;
 
 public class MainActivity extends AppCompatActivity implements
-        BottomNavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+        BottomNavigationView.OnNavigationItemSelectedListener {
 
     // Bind Bottom Navigation View
     @BindView(R.id.navigation)
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements
 
         mInternetConnectivity = new InternetConnectivity(this);
 
-        mSnackBar = Snackbar.make(findViewById(R.id.main_activity_snack_bar),
+        mSnackBar = Snackbar.make(findViewById(R.id.main_activity_coordinator_layout),
                 getString(R.string.main_activity_snack_bar_no_connection), Snackbar.LENGTH_INDEFINITE);
 
         checkForNetworkConnection();
@@ -63,11 +63,6 @@ public class MainActivity extends AppCompatActivity implements
             mSnackBar.setAction("Settings", new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-//                    Intent intent = new Intent();
-//                    intent.setAction(Settings.ACTION_WIFI_SETTINGS);
-//                    Uri uri = Uri.fromParts("package", getPackageName(), null);
-//                    intent.setData(uri);
-//                    startActivity(intent);
                     startActivityForResult(new Intent(Settings.ACTION_SETTINGS), 0);
                 }
             });
@@ -129,8 +124,7 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        super.onOptionsItemSelected(item);
-
+       
         switch (item.getItemId()) {
             case R.id.action_about:
 
@@ -158,22 +152,15 @@ public class MainActivity extends AppCompatActivity implements
                                 }).show();
 
                 return true;
-        }
 
-        return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         checkForNetworkConnection();
-    }
-
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.main_activity_snack_bar:
-                break;
-        }
     }
 }
