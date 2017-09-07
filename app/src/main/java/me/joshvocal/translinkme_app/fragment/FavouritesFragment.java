@@ -128,6 +128,8 @@ public class FavouritesFragment extends Fragment implements
 
                 busStopNumbers.add(realTimeTransitInformationBuilder.build().toString());
             }
+
+            cursor.close();
         }
 
         return new BusStopFavouriteLoader(getActivity(), busStopNumbers);

@@ -10,6 +10,7 @@
     <string name="main_activity_alert_dialog_github_button">Github</string>
     <string name="main_activity_alert_dialog_github_url">https://github.com/joshvocal/TransLinkMe-App</string>
     <string name="main_activity_alert_dialog_rate_button">Rate</string>
+    <string name="main_activity_snack_bar_no_connection">No connection</string>
 
     <!-- Favourites Fragment -->
     <string name="title_favourites">Favourites</string>

@@ -162,7 +162,8 @@ public class SearchFragment extends Fragment implements
         } else {
             mProgressBar.setVisibility(View.GONE);
             mRecyclerView.setVisibility(View.GONE);
-
+            mWelcomeLayout.setVisibility(View.GONE);
+            mSomethingWrongLayout.setVisibility(View.VISIBLE);
         }
 
         return true;
@@ -178,7 +179,7 @@ public class SearchFragment extends Fragment implements
         }
 
         if (newText.length() > 5) {
-            Toast.makeText(getContext(), "Text character is more than 5", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Bus stops contain 5 digits.", Toast.LENGTH_SHORT).show();
             mSearchView.setQuery(newText.substring(0, 5), false);
         }
 

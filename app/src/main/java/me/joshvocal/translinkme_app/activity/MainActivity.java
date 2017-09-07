@@ -4,12 +4,15 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -17,13 +20,18 @@ import me.joshvocal.translinkme_app.R;
 import me.joshvocal.translinkme_app.fragment.FavouritesFragment;
 import me.joshvocal.translinkme_app.fragment.LocationFragment;
 import me.joshvocal.translinkme_app.fragment.SearchFragment;
+import me.joshvocal.translinkme_app.utils.InternetConnectivity;
 
 public class MainActivity extends AppCompatActivity implements
-        BottomNavigationView.OnNavigationItemSelectedListener {
+        BottomNavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
     // Bind Bottom Navigation View
     @BindView(R.id.navigation)
     BottomNavigationView mBottomNavigationView;
+
+    private Snackbar mSnackBar;
+
+    private InternetConnectivity mInternetConnectivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +45,35 @@ public class MainActivity extends AppCompatActivity implements
             switchToSearchFragment();
         }
 
+        // Bind Bottom Navigation
         mBottomNavigationView.setSelectedItemId(R.id.navigation_search);
         mBottomNavigationView.setOnNavigationItemSelectedListener(this);
+
+        mInternetConnectivity = new InternetConnectivity(this);
+
+        mSnackBar = Snackbar.make(findViewById(R.id.main_activity_snack_bar),
+                getString(R.string.main_activity_snack_bar_no_connection), Snackbar.LENGTH_INDEFINITE);
+
+        checkForNetworkConnection();
+    }
+
+    private void checkForNetworkConnection() {
+        if (!mInternetConnectivity.isConnected()) {
+
+            mSnackBar.setAction("Settings", new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+//                    Intent intent = new Intent();
+//                    intent.setAction(Settings.ACTION_WIFI_SETTINGS);
+//                    Uri uri = Uri.fromParts("package", getPackageName(), null);
+//                    intent.setData(uri);
+//                    startActivity(intent);
+                    startActivityForResult(new Intent(Settings.ACTION_SETTINGS), 0);
+                }
+            });
+
+            mSnackBar.show();
+        }
     }
 
     private void switchToSearchFragment() {
@@ -126,5 +161,19 @@ public class MainActivity extends AppCompatActivity implements
         }
 
         return true;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        checkForNetworkConnection();
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.main_activity_snack_bar:
+                break;
+        }
     }
 }

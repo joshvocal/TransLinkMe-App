@@ -155,9 +155,13 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
                 selectionArgs,                      // No selection arguments
                 null);                              // No default sort order
 
+
         if (cursor != null && cursor.getCount() > 0) {
+            cursor.close();
             return true;
         }
+
+        cursor.close();
 
         return false;
     }
