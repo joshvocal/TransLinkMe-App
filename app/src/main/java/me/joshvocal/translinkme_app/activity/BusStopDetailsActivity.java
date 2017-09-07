@@ -170,7 +170,7 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
 
             mFavouriteButton.setImageResource(R.drawable.ic_favorite_border_black_24dp);
 
-            Toasty.normal(this, "Deleted from Favourites.",
+            Toasty.normal(this, getString(R.string.deleted_from_favourites),
                     ContextCompat.getDrawable(this, R.drawable.ic_remove_circle_black_24dp)).show();
 
         } else {
@@ -180,7 +180,7 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
 
             mFavouriteButton.setImageResource(R.drawable.ic_favorite_black_24dp);
 
-            Toasty.normal(this, "Added to Favourites.",
+            Toasty.normal(this, getString(R.string.added_to_favourites),
                     ContextCompat.getDrawable(this, R.drawable.ic_favorite_black_24dp)).show();
 
         }
