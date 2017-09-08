@@ -5,8 +5,8 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.LoaderManager;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.content.Loader;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
@@ -24,7 +24,6 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import es.dmoral.toasty.Toasty;
 import me.joshvocal.translinkme_app.R;
 import me.joshvocal.translinkme_app.adapter.BusStopDetailsAdapter;
 import me.joshvocal.translinkme_app.data.BusContract;
@@ -71,6 +70,7 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
     private String mOnStreet;
     private String mAtStreet;
     private InternetConnectivity mInternetConnectivity;
+    private Snackbar mSnackbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,15 +100,11 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
 
         }
 
+        setFavouriteButtonIcon();
+
         mFavouriteButton.setOnClickListener(this);
 
         mSwipeRefreshLayout.setOnRefreshListener(this);
-
-        if (isBusStopFavourite()) {
-            mFavouriteButton.setImageResource(R.drawable.ic_favorite_black_24dp);
-        } else {
-            mFavouriteButton.setImageResource(R.drawable.ic_favorite_border_black_24dp);
-        }
 
         // Use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
@@ -133,6 +129,14 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
             loaderManager.initLoader(BUS_STOP_DETAILS_SEARCH_LOADER_ID, null, this);
         } else {
 
+        }
+    }
+
+    private void setFavouriteButtonIcon() {
+        if (isBusStopFavourite()) {
+            mFavouriteButton.setImageResource(R.drawable.ic_favorite_black_24dp);
+        } else {
+            mFavouriteButton.setImageResource(R.drawable.ic_favorite_border_black_24dp);
         }
     }
 
@@ -174,9 +178,8 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
 
             mFavouriteButton.setImageResource(R.drawable.ic_favorite_border_black_24dp);
 
-            Toasty.normal(this, getString(R.string.deleted_from_favourites),
-                    ContextCompat.getDrawable(this, R.drawable.ic_remove_circle_black_24dp)).show();
-
+            Snackbar.make(findViewById(R.id.bus_stop_details_coordinator_layout),
+                    getString(R.string.deleted_from_favourites), Snackbar.LENGTH_SHORT).show();
         } else {
             ContentValues values = new ContentValues();
             values.put(BusContract.BusEntry.COLUMN_BUS_NUMBER, mBusStopNumber);
@@ -184,9 +187,9 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
 
             mFavouriteButton.setImageResource(R.drawable.ic_favorite_black_24dp);
 
-            Toasty.normal(this, getString(R.string.added_to_favourites),
-                    ContextCompat.getDrawable(this, R.drawable.ic_favorite_black_24dp)).show();
-
+            // Bind SnackBar
+            Snackbar.make(findViewById(R.id.bus_stop_details_coordinator_layout),
+                    getString(R.string.added_to_favourites), Snackbar.LENGTH_SHORT).show();
         }
     }
 
@@ -221,7 +224,7 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
 
     @Override
     public void onLoaderReset(Loader<List<Bus>> loader) {
-
+        // Empty generated method.
     }
 
     @Override

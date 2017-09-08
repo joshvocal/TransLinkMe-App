@@ -30,8 +30,8 @@
     <string name="transit_bus_stop_details_on_street">On Street</string>
     <string name="bus_stop_details_at_street">At Street</string>
     <string name="menu_about">About</string>
-    <string name="deleted_from_favourites">Deleted from Favourites</string>
-    <string name="added_to_favourites">Added to Favourites</string>
+    <string name="deleted_from_favourites">Deleted from favourites</string>
+    <string name="added_to_favourites">Added to favourites</string>
     <string name="fragment_location_snack_bar_settings">Settings</string>
 
 

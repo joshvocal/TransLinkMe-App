@@ -220,7 +220,7 @@ public class LocationFragment extends Fragment implements
                 .appendQueryParameter("apikey", TRANSLINK_OPEN_API_KEY)
                 .appendQueryParameter("lat", String.format(Locale.CANADA, "%.4f", mLastLocation.getLatitude()))
                 .appendQueryParameter("long", String.format(Locale.CANADA, "%.4f", mLastLocation.getLongitude()))
-                .appendQueryParameter("radius", "20");
+                .appendQueryParameter("radius", "200");
 
         Log.d(LOG_TAG, realTimeTransitInformationBuilder.build().toString());
 
