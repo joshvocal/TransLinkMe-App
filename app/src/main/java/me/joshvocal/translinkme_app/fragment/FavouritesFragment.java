@@ -83,8 +83,7 @@ public class FavouritesFragment extends Fragment implements
         mInternetConnectivity = new InternetConnectivity(getContext());
 
         if (mInternetConnectivity.isConnected()) {
-            LoaderManager loaderManager = getLoaderManager();
-            loaderManager.initLoader(BUS_STOP_FAVOURITE_LOADER_ID, null, this);
+            getLoaderManager().restartLoader(BUS_STOP_FAVOURITE_LOADER_ID, null, this);
         } else {
             mProgressBar.setVisibility(View.GONE);
             mRecyclerView.setVisibility(View.GONE);
@@ -112,6 +111,7 @@ public class FavouritesFragment extends Fragment implements
                 null);
 
         if (null != cursor && cursor.getCount() >= 1) {
+
             int index = cursor.getColumnIndex(BusContract.BusEntry.COLUMN_BUS_NUMBER);
 
             while (cursor.moveToNext()) {
@@ -142,15 +142,26 @@ public class FavouritesFragment extends Fragment implements
         if (data != null && !data.isEmpty()) {
             mEmptyFavouriteLinearLayout.setVisibility(View.GONE);
             mNoInternetLinearLayout.setVisibility(View.GONE);
+
             mAdapter = new BusStopItemAdapter(getContext(), data);
             mRecyclerView.setAdapter(mAdapter);
         } else {
             mEmptyFavouriteLinearLayout.setVisibility(View.VISIBLE);
+            mRecyclerView.setVisibility(View.GONE);
         }
     }
 
     @Override
     public void onLoaderReset(Loader<List<BusStop>> loader) {
         // Empty
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        if (mAdapter != null) {
+            getLoaderManager().restartLoader(BUS_STOP_FAVOURITE_LOADER_ID, null, this);
+        }
     }
 }

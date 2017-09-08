@@ -69,7 +69,7 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
     private String mOnStreet;
     private String mAtStreet;
     private InternetConnectivity mInternetConnectivity;
-    private Snackbar mSnackbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +96,6 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
             setTitle("Stop: " + mBusStopNumber);
             mAtStreet = extras.getString(BUS_STOP_AT_STREET_KEY);
             mOnStreet = extras.getString(BUS_STOP_ON_STREET_KEY);
-
         }
 
         setFavouriteButtonIcon();
