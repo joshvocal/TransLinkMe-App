@@ -11,7 +11,6 @@ import android.support.v4.content.Loader;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -117,18 +116,11 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
         mLinearLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
 
-        // Decorate the recycler view
-        DividerItemDecoration dividerItemDecoration =
-                new DividerItemDecoration(mRecyclerView.getContext(), mLinearLayoutManager.getOrientation());
-        mRecyclerView.addItemDecoration(dividerItemDecoration);
-
         mInternetConnectivity = new InternetConnectivity(this);
 
         if (mInternetConnectivity.isConnected()) {
             LoaderManager loaderManager = getSupportLoaderManager();
             loaderManager.initLoader(BUS_STOP_DETAILS_SEARCH_LOADER_ID, null, this);
-        } else {
-
         }
     }
 
@@ -170,27 +162,32 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
         return false;
     }
 
+    private void addBusToFavourites() {
+        ContentValues values = new ContentValues();
+        values.put(BusContract.BusEntry.COLUMN_BUS_NUMBER, mBusStopNumber);
+        getContentResolver().insert(BusContract.BusEntry.CONTENT_URI, values);
+    }
+
+    private void deleteBusFromFavourites() {
+        String[] selectionArgs = {mBusStopNumber};
+        String selection = BusContract.BusEntry.COLUMN_BUS_NUMBER + "  =?";
+        getContentResolver().delete(BusContract.BusEntry.CONTENT_URI, selection, selectionArgs);
+    }
+
     private void addToFavourites() {
         if (isBusStopFavourite()) {
-            String[] selectionArgs = {mBusStopNumber};
-            String selection = BusContract.BusEntry.COLUMN_BUS_NUMBER + "  =?";
-            getContentResolver().delete(BusContract.BusEntry.CONTENT_URI, selection, selectionArgs);
-
-            mFavouriteButton.setImageResource(R.drawable.ic_favorite_border_black_24dp);
-
+            // Delete
+            deleteBusFromFavourites();
             Snackbar.make(findViewById(R.id.bus_stop_details_coordinator_layout),
                     getString(R.string.deleted_from_favourites), Snackbar.LENGTH_SHORT).show();
         } else {
-            ContentValues values = new ContentValues();
-            values.put(BusContract.BusEntry.COLUMN_BUS_NUMBER, mBusStopNumber);
-            getContentResolver().insert(BusContract.BusEntry.CONTENT_URI, values);
-
-            mFavouriteButton.setImageResource(R.drawable.ic_favorite_black_24dp);
-
-            // Bind SnackBar
+            // Add
+            addBusToFavourites();
             Snackbar.make(findViewById(R.id.bus_stop_details_coordinator_layout),
                     getString(R.string.added_to_favourites), Snackbar.LENGTH_SHORT).show();
         }
+
+        setFavouriteButtonIcon();
     }
 
     @Override
