@@ -15,8 +15,10 @@ import me.joshvocal.translinkme_app.activity.BusStopDetailsActivity;
 import me.joshvocal.translinkme_app.model.BusStop;
 
 import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_AT_STREET_KEY;
+import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_NAME_KEY;
 import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_NUMBER_KEY;
 import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_ON_STREET_KEY;
+import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_ROUTES_KEY;
 
 /**
  * Created by josh on 9/4/17.
@@ -69,12 +71,22 @@ public class BusStopItemAdapter extends RecyclerView.Adapter<BusStopItemAdapter.
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(mContext, BusStopDetailsActivity.class);
+            // Bus Stop Number
             intent.putExtra(BUS_STOP_NUMBER_KEY,
                     mBusStopList.get(getAdapterPosition()).getStopNumber());
+            // Bus Stop at Street
             intent.putExtra(BUS_STOP_AT_STREET_KEY,
                     mBusStopList.get(getAdapterPosition()).getAtStreet());
+            // Bus Stop on Street
             intent.putExtra(BUS_STOP_ON_STREET_KEY,
                     mBusStopList.get(getAdapterPosition()).getOnStreet());
+            // Bus Stop Routes
+            intent.putExtra(BUS_STOP_ROUTES_KEY,
+                    mBusStopList.get(getAdapterPosition()).getRoutes());
+            // Bus Stop Name
+            intent.putExtra(BUS_STOP_NAME_KEY,
+                    mBusStopList.get(getAdapterPosition()).getName());
+
             mContext.startActivity(intent);
         }
     }

@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="4774c98dbe5d8b20ba491236e5e10ad094ca38e4">
+        sha1="f2126ee401a80282dca058e92154e3f6c0b8159c">
         <dex dex="/home/josh/AndroidStudioProjects/TransLinkMe-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_82fc7b51b341fd78e20bad1bf4607a7258d9af27/classes.dex" />
     </item>
     <item

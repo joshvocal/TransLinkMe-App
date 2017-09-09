@@ -17,6 +17,8 @@ public class Constants {
     public static final String BUS_STOP_NUMBER_KEY = "busStopNumberKey";
     public static final String BUS_STOP_AT_STREET_KEY = "busStopAtStreetKey";
     public static final String BUS_STOP_ON_STREET_KEY = "busStopOnStreetKey";
+    public static final String BUS_STOP_ROUTES_KEY = "busStopRoutesKey";
+    public static final String BUS_STOP_NAME_KEY = "busStopNameKey";
 
     public static final int BUS_STOP_SEARCH_LOADER_ID = 100;
     public static final int BUS_STOP_DETAILS_SEARCH_LOADER_ID = 101;

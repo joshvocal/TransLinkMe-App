@@ -100,7 +100,7 @@ public class FavouritesFragment extends Fragment implements
         //Define a projection that specifies the columns from the table we care about.
         String[] projection = {
                 BusContract.BusEntry._ID,
-                BusContract.BusEntry.COLUMN_BUS_NUMBER
+                BusContract.BusEntry.COLUMN_BUS_STOP_NUMBER
         };
 
         Cursor cursor = getContext().getContentResolver().query(
@@ -112,7 +112,7 @@ public class FavouritesFragment extends Fragment implements
 
         if (null != cursor && cursor.getCount() >= 1) {
 
-            int index = cursor.getColumnIndex(BusContract.BusEntry.COLUMN_BUS_NUMBER);
+            int index = cursor.getColumnIndex(BusContract.BusEntry.COLUMN_BUS_STOP_NUMBER);
 
             while (cursor.moveToNext()) {
 

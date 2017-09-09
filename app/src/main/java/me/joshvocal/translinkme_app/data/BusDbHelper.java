@@ -20,7 +20,7 @@ public class BusDbHelper extends SQLiteOpenHelper {
     /**
      * Database version. If you change the database schema, you must increment the database version.
      */
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 
     /**
      * Constructs a new instance of {@link BusDbHelper}
@@ -41,7 +41,9 @@ public class BusDbHelper extends SQLiteOpenHelper {
         // Create a String the contains the SQL statement to create the favourite buses table
         String SQL_CREATE_FAVOURITE_BUSES_TABLE = "CREATE TABLE " + BusContract.BusEntry.TABLE_NAME + " ("
                 + BusContract.BusEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + BusContract.BusEntry.COLUMN_BUS_NUMBER + " INTEGER NOT NULL UNIQUE );";
+                + BusContract.BusEntry.COLUMN_BUS_STOP_NUMBER + " TEXT NOT NULL, "
+                + BusContract.BusEntry.COLUMN_BUS_STOP_NAME + " TEXT NOT NULL, "
+                + BusContract.BusEntry.COLUMN_BUS_STOP_ROUTES + " TEXT NOT NULL );";
 
         // Execute the SQL statement
         sqLiteDatabase.execSQL(SQL_CREATE_FAVOURITE_BUSES_TABLE);

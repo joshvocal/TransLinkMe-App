@@ -51,14 +51,14 @@ public class MainActivity extends AppCompatActivity implements
 
         mInternetConnectivity = new InternetConnectivity(this);
 
-        mSnackBar = Snackbar.make(findViewById(R.id.main_activity_coordinator_layout),
-                getString(R.string.main_activity_snack_bar_no_connection), Snackbar.LENGTH_INDEFINITE);
-
         checkForNetworkConnection();
     }
 
     private void checkForNetworkConnection() {
         if (!mInternetConnectivity.isConnected()) {
+
+            mSnackBar = Snackbar.make(findViewById(R.id.main_activity_coordinator_layout),
+                    getString(R.string.main_activity_snack_bar_no_connection), Snackbar.LENGTH_INDEFINITE);
 
             mSnackBar.setAction("Settings", new View.OnClickListener() {
                 @Override

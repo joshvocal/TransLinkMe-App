@@ -152,7 +152,7 @@ public class BusProvider extends ContentProvider {
 
     private Uri insertBus(Uri uri, ContentValues values) {
         // Check that the name is not null.
-        String number = values.getAsString(BusContract.BusEntry.COLUMN_BUS_NUMBER);
+        String number = values.getAsString(BusContract.BusEntry.COLUMN_BUS_STOP_NUMBER);
         if (number == null) {
             throw new IllegalArgumentException("Bus requires a number");
         }

@@ -32,8 +32,10 @@ import me.joshvocal.translinkme_app.utils.InternetConnectivity;
 
 import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_AT_STREET_KEY;
 import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_DETAILS_SEARCH_LOADER_ID;
+import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_NAME_KEY;
 import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_NUMBER_KEY;
 import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_ON_STREET_KEY;
+import static me.joshvocal.translinkme_app.utils.Constants.BUS_STOP_ROUTES_KEY;
 import static me.joshvocal.translinkme_app.utils.Constants.TRANSLINK_OPEN_API_KEY;
 
 public class BusStopDetailsActivity extends AppCompatActivity implements
@@ -66,8 +68,10 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
     private RecyclerView.Adapter mAdapter;
     private LinearLayoutManager mLinearLayoutManager;
     private String mBusStopNumber;
-    private String mOnStreet;
-    private String mAtStreet;
+    private String mBusStopOnStreet;
+    private String mBusStopAtStreet;
+    private String mBusStopName;
+    private String mBusStopRoutes;
     private InternetConnectivity mInternetConnectivity;
 
 
@@ -94,8 +98,10 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
         if (extras != null) {
             mBusStopNumber = extras.getString(BUS_STOP_NUMBER_KEY);
             setTitle("Stop: " + mBusStopNumber);
-            mAtStreet = extras.getString(BUS_STOP_AT_STREET_KEY);
-            mOnStreet = extras.getString(BUS_STOP_ON_STREET_KEY);
+            mBusStopAtStreet = extras.getString(BUS_STOP_AT_STREET_KEY);
+            mBusStopOnStreet = extras.getString(BUS_STOP_ON_STREET_KEY);
+            mBusStopName = extras.getString(BUS_STOP_NAME_KEY);
+            mBusStopRoutes = extras.getString(BUS_STOP_ROUTES_KEY);
         }
 
         setFavouriteButtonIcon();
@@ -108,8 +114,8 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
         // in content do not change the layout size of the RecyclerView
         mRecyclerView.setHasFixedSize(true);
 
-        mOnStreetTextView.setText(mOnStreet);
-        mAtStreetTextView.setText(mAtStreet);
+        mOnStreetTextView.setText(mBusStopOnStreet);
+        mAtStreetTextView.setText(mBusStopAtStreet);
 
         // Use a linear layout manager
         mLinearLayoutManager = new LinearLayoutManager(this);
@@ -134,13 +140,13 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
 
     private boolean isBusStopFavourite() {
 
-        String selection = BusContract.BusEntry.COLUMN_BUS_NUMBER + " =?";
+        String selection = BusContract.BusEntry.COLUMN_BUS_STOP_NUMBER + " =?";
         String[] selectionArgs = {mBusStopNumber};
 
         //Define a projection that specifies the columns from the table we care about.
         String[] projection = {
                 BusContract.BusEntry._ID,
-                BusContract.BusEntry.COLUMN_BUS_NUMBER
+                BusContract.BusEntry.COLUMN_BUS_STOP_NUMBER
         };
 
         Cursor cursor = getContentResolver().query(
@@ -163,13 +169,15 @@ public class BusStopDetailsActivity extends AppCompatActivity implements
 
     private void addBusToFavourites() {
         ContentValues values = new ContentValues();
-        values.put(BusContract.BusEntry.COLUMN_BUS_NUMBER, mBusStopNumber);
+        values.put(BusContract.BusEntry.COLUMN_BUS_STOP_NUMBER, mBusStopNumber);
+        values.put(BusContract.BusEntry.COLUMN_BUS_STOP_NAME, mBusStopName);
+        values.put(BusContract.BusEntry.COLUMN_BUS_STOP_ROUTES, mBusStopRoutes);
         getContentResolver().insert(BusContract.BusEntry.CONTENT_URI, values);
     }
 
     private void deleteBusFromFavourites() {
         String[] selectionArgs = {mBusStopNumber};
-        String selection = BusContract.BusEntry.COLUMN_BUS_NUMBER + "  =?";
+        String selection = BusContract.BusEntry.COLUMN_BUS_STOP_NUMBER + "  =?";
         getContentResolver().delete(BusContract.BusEntry.CONTENT_URI, selection, selectionArgs);
     }
 

@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
@@ -28,6 +29,8 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -50,7 +53,7 @@ import static me.joshvocal.translinkme_app.utils.Constants.TRANSLINK_OPEN_API_KE
 
 
 public class LocationFragment extends Fragment implements
-        LoaderManager.LoaderCallbacks<List<BusStop>> {
+        LoaderManager.LoaderCallbacks<List<BusStop>>, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
     // Bind RecyclerView
     @BindView(R.id.fragment_location_recycler_view)
@@ -76,6 +79,9 @@ public class LocationFragment extends Fragment implements
     private InternetConnectivity mInternetConnectivity;
 
     private Snackbar mSnackBar;
+
+    // Google client to interact with Google API
+    private GoogleApiClient mGoogleApiClient;
 
     /**
      * Provides the entry point to the Fused Locaiton Provider API.
@@ -124,14 +130,33 @@ public class LocationFragment extends Fragment implements
         return rootView;
     }
 
+    /**
+     * Creating Google Api Client object
+     */
+    protected synchronized void buildGoogleApiClient() {
+
+        if (mGoogleApiClient == null) {
+            mGoogleApiClient = new GoogleApiClient.Builder(getActivity().getApplicationContext())
+                    .addConnectionCallbacks(this)
+                    .addOnConnectionFailedListener(this)
+                    .addApi(LocationServices.API).build();
+        }
+
+        mGoogleApiClient.connect();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        buildGoogleApiClient();
+    }
+
     @Override
     public void onStart() {
         super.onStart();
 
-        if (!checkPermissions()) {
-            requestPermissions();
-        } else {
-            getLastLocation();
+        if (mGoogleApiClient != null) {
+            mGoogleApiClient.connect();
         }
     }
 
@@ -144,9 +169,9 @@ public class LocationFragment extends Fragment implements
 
                         if (task.isSuccessful() && task.getResult() != null) {
                             mLastLocation = task.getResult();
-                            Toast.makeText(getContext(), "it worked", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), "Location set", Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(getContext(), "nope", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), "Location not set", Toast.LENGTH_SHORT).show();
                         }
 
                     }
@@ -295,5 +320,25 @@ public class LocationFragment extends Fragment implements
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+        Toast.makeText(getContext(), "Connection failed:", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onConnected(@Nullable Bundle bundle) {
+
+        if (!checkPermissions()) {
+            requestPermissions();
+        } else {
+            getLastLocation();
+        }
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+        mGoogleApiClient.connect();
     }
 }

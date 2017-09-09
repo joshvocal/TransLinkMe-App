@@ -48,9 +48,23 @@ public class BusContract {
         /**
          * Number of the bus.
          * <p>
-         * Type: INTEGER
+         * Type: STRING
          */
-        public static final String COLUMN_BUS_NUMBER = "number";
+        public static final String COLUMN_BUS_STOP_NUMBER = "number";
+
+        /**
+         * Name of the bus.
+         * <p>
+         * Type: STRING
+         */
+        public static final String COLUMN_BUS_STOP_NAME = "name";
+
+        /**
+         * Routes of the bus.
+         * <p>
+         * Type: STRING
+         */
+        public static final String COLUMN_BUS_STOP_ROUTES = "routes";
 
     }
 }
