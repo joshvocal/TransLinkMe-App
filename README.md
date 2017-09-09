@@ -1,4 +1,6 @@
-# TransLinkMe :bus::bus::bus:
+# TransLinkMe
+
+![](https://github.com/joshvocal/TransLinkMe-App/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
 
 ## What does this do?
 
