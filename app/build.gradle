@@ -11,6 +11,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -49,7 +50,7 @@ dependencies {
     compile 'com.android.support:cardview-v7:26.0.1'
 
     // Location
-    compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'com.google.android.gms:play-services:11.8.0'
 
     // Toasty
     compile 'com.github.GrenderG:Toasty:1.2.5'

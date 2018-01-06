@@ -101,9 +101,9 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.navigation_location:
-                switchToLocationFragment();
-                return true;
+//            case R.id.navigation_location:
+//                switchToLocationFragment();
+//                return true;
             case R.id.navigation_search:
                 switchToSearchFragment();
                 return true;
